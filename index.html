@@ -11,30 +11,37 @@
 
 <body>
     
-    
-	<header>
-		<h1>Accueil</h1>
-        
-		<p id="eleve">Gostiaux Méziane</p>
-	</header>
+    <div id="barreduhaut">
+		<header>
+			<p id="encartnames"><a href="index.html" id="sitename">MG</a> | <span id="pagename">Home</span></p>
+		</header>
 	
-	<nav>
-		<ul>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="pages/histoire.html">Histoire</a></li>
-			<li><a href="pages/favoris.html">Favoris</a></li>
-			<li><a href="pages/sources.html">sources</a></li>
-		</ul>
-	</nav>
-
-	<section>
-        <h2>Présentation</h2>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="pages/histoire.html">Histoire</a></li>
+				<li><a href="pages/favoris.html">Favoris</a></li>
+				<li><a href="pages/sources.html">sources</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div>
+		<section id="presentation">
+			<div class="barreduhautback"></div>
+			<h2>Présentation</h2>
         
-		<p>
+			<p>
             Je suis Méziane Gostiaux, élève de la classe 1g3 au Lycée La Martinière Diderot à Lyon.
-        </p>
-        <article>
-			<h3>Mes spécialités</h3>
+			</p>
+			<div class="next">
+				<a href="#specialites">🡫</a>
+			</div>
+        </section>
+        
+        <section id="specialites">
+			<div class="barreduhautback"></div>
+			<h2>Mes spécialités</h2>
 			<p>Mes 3 spécialités pour l'année de première sont: </p>
         
 			<ul>
@@ -42,16 +49,24 @@
 				<li>Physique</li>
 				<li>Numérique et Sciences de l'Informatique</li>        
 			</ul>
-        </article>
+			<div class="next">
+				<a href="#orientation">🡫</a>
+			</div>
+        </section>
         
-        <article>
-			<h3>Mon orientation post-bac</h3>
+        <section id="orientation">
+			<div class="barreduhautback"></div>
+			<h2>Mon orientation post-bac</h2>
 			<p>Par la suite je souhiate m'orienter vers l'informatique, et plus précisément vers la sécurité.</p>
 			<p>Je pense donc peut être faire une prépa puis une école d'informatique. Il y a beaucoup de choix dans ce domaine et il y a de nouvelles écoles avec une pédagogie novatrice tel que l'apprentissage par projets et le peer to peer learning.</p>
-        </article>
+			<div class="next">
+				<a href="#interets">🡫</a>
+			</div>
+        </section>
         
-        <article>
-			<h3>Mes centres d'intérêts</h3>
+        <section id="interets">
+			<div class="barreduhautback"></div>
+			<h2>Mes centres d'intérêts</h2>
 			<p>J'aime beacoup le sport donc même si je n'en pratique plus en club j'ai toujours un entraînement régulier. Par le passé j'ai fait :</p>
 			<ul>
 				<li>9 ans de <strong>judo</strong></li>
@@ -62,9 +77,9 @@
 			<p>Je fais aussi du <strong>scoutisme</strong> depuis 8ans.</p>
 			
 			<p>En dehors du sport j'aime aussi le <strong>dessin</strong> et <strong>l'informatique</strong>, j'ai d'ailleurs fait de nombreux stages autour des métiers de l'informatique.</p>
-        </article>
+        </section>
         
-	</section>
+	</div>
     
 	<footer>
         <a href="index.html">Accueil</a>

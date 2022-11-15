@@ -10,21 +10,88 @@ html{
     font-size: 20px; /* taille de référence des fontes */
 }
 
-header{
-    height: 320px; /* on impose la hauteur du header pour la photo */
+/*header{
+    height: 320px;  on impose la hauteur du header pour la photo 
     background-image: url('../images/banniere_ent_5.gif');
     text-align:center;
     color: white;
     font-weight: bold;
+}*/
+#barreduhaut{
+background-color: #25252a;
+height: 80px;
+overflow: hidden;
+/*filter: blur(5px);*/
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
 }
-
+#encartnames{
+	margin : 10px;
+    font-size : 40px ;
+    font-family : Ubuntu, Courier New;
+    font-weight : lighter;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
+}
+a#sitename{
+	color: #f3f7fb;
+    font-size : 50px ;
+    font-family : Ubuntu, Courier New;
+    font-weight : bold;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
+}
+#pagename{
+	color: #f3f7fb;
+    font-size : 40px ;
+    font-family : Ubuntu, Courier New;
+    font-weight : normal;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
+}
+.barreduhautback{
+	height: 80px;
+}
+header{
+display: inline-block;
+border: 1px solid yellow;
+}
+nav{
+padding: 0px;
+margin: 0px;
+margin-top: 20px;
+border: 1px solid yellow;
+position: right;
+display: inline-block;
+float: right;
+}
 body{
-    width: 70%; /* occupe 70% de la page en largeur */
+    width: 100%; /* occupe 70% de la page en largeur */
     margin: 0 auto; /* auto permet ici de centrer le body en laissant marge gauche et marge droite identiques */
 }
-h1{
-    font-size: 2rem; /* 2rem = 2 fois la taille de référence, soit 40px */
-    padding-top: 1rem;  
+nav ul{
+	padding: 0px;
+	margin : 0px;
+	padding-right: 40px;
+}
+nav li{
+	margin : 10px;
+	padding: 0px;
+	display: inline-block;
+}
+nav li a{
+	color: #f3f7fb;
+    font-size : 30px ;
+    font-family : Ubuntu, Courier New;
+    font-weight : lighter;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
 }
 h2{
     font-size: 1.5rem;
@@ -32,8 +99,42 @@ h2{
     text-align:center;
     border-radius: 20px;
 }
-p#eleve{
-    font-size: 1.5rem;
+section#presentation{
+   height: 100vh;
+}
+section#specialites{
+height: 100vh;
+background-image: url('../images/test.jpg');
+background-color: #cccccc;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+section#orientation{
+   height: 100vh;
+}
+section#interets{
+   height: 100vh;
+}
+.next{
+	background: #1f5d2f;
+	width: 60px;
+	height: 60px;
+	border-radius : 100%;
+	float: right;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+}
+.next a{
+	color: #f3f7fb;
+    font-size : 40px ;
+    font-family : Ubuntu, Courier New;
+    font-weight : bolder;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
+    margin: 15px;
 }
 footer{
     text-align:center;
