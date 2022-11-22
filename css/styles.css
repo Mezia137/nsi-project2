@@ -6,26 +6,49 @@ Sur une idée originale de Jean-Manuel Meny et Ludovic Fasquelle
 */
 
 :root {
-  --texte: #F0F4F9;
-  --title: #F3AE5F;
-  --barre: #014D69;
-  --bkgrn1: #0B87BA;
+  --texte: #f3f3f4;
+  --title: #d9c5b2;
+  --barre: #14110f;
+  --bkgrn1: #7e7f83;
   --bkgrn2: #5BA199;
-  --bkgrn3: #BBC6C8;
-  --button: #D38F5E;
-}
- 
-html{ 
-    font-size: 20px; /* taille de référence des fontes */
+  --bkgrn3: #34312d;
+  --button: #d9c5b2;
 }
 
-/*header{
-    height: 320px;  on impose la hauteur du header pour la photo 
-    background-image: url('../images/banniere_ent_5.gif');
-    text-align:center;
-    color: white;
-    font-weight: bold;
-}*/
+header{
+	display: inline-block;
+}
+body{
+    width: 100%; /* occupe 70% de la page en largeur */
+    margin: 0 auto; /* auto permet ici de centrer le body en laissant marge gauche et marge droite identiques */
+}
+h2{
+    color : var(--title); 
+    font-size : 70px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : bolder;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
+    margin: 20px;
+    margin-top: 100px;
+    
+}
+p{
+    color : var(--texte); 
+    font-size : 20px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : normal;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
+    
+}
+section{
+	height: 100vh;
+	background: var(--bkgrn1);
+	text-align: center;
+}
 .barreduhaut{
 background-color: var(--barre);
 height: 50px;
@@ -37,15 +60,17 @@ top:0px;
 left:0px;
 right:0px;
 }
+.barreduhautback{
+	height: 50px;
+}
 .encartnames{
 	margin : 0px;
 	margin-left : 10px;
+	
+	color: var(--texte);
     font-size : 40px ;
     font-family : Ubuntu, Helvetica;
     font-weight : lighter;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal; 
 }
 a.sitename{
 	color: var(--texte);
@@ -54,7 +79,7 @@ a.sitename{
     font-weight : bold;
     font-style : normal;
     text-decoration : none;
-    font-variant : normal; 
+    font-variant : normal;
 }
 a.pagename{
 	color: var(--texte);
@@ -63,28 +88,48 @@ a.pagename{
     font-weight : normal;
     font-style : normal;
     text-decoration : none;
-    font-variant : normal; 
+    font-variant : normal;
 }
-.barreduhautback{
-	height: 50px;
-}
-header{
-display: inline-block;
-border: 0px solid yellow;
-}
+
+
 nav{
-padding: 0px;
-margin: 0px;
-margin-top: 0px;
-border: 0px solid yellow;
-position: right;
-display: inline-block;
-float: right;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	border: 0px solid yellow;
+	display: inline-block;
+	float: right;
+	position: fixed;
+	right: -25em;
+	transition: 0.2s;
+	
+	color: var(--texte);
+    font-size : 25px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : lighter;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
+}
+nav:hover { right: 0 }
+
+.menu-icone{
+	display: inline;
+	margin-right: 10px;
+	
+	color : var(--texte); 
+    font-size : 30px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : bolder;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal; 
 }
 nav ul{
 	padding: 0px;
 	margin : 0px;
-	padding-right: 40px;
+	padding-right: 25px;
+	display: inline;
 }
 nav li{
 	margin : 10px;
@@ -100,80 +145,85 @@ nav li a{
     text-decoration : none;
     font-variant : normal; 
 }
-
-
-body{
-    width: 100%; /* occupe 70% de la page en largeur */
-    margin: 0 auto; /* auto permet ici de centrer le body en laissant marge gauche et marge droite identiques */
+.container {
+/*
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+*/	
+	display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    
 }
-p{                                     /* Mise en forme des paragraphes */
+/*
+.texte h2{
+	margin-top: 100px;
+}*/
+.texte-content{
+	height: 40%;
+    margin: 20px;
+    padding-top: 100px;
+    
     color : var(--texte); 
-    font-size : 18px ;
+    font-size : 20px ;
     font-family : Ubuntu, Helvetica;
     font-weight : normal;
     font-style : normal;
     text-decoration : none;
-    font-variant : normal; 
-}
-.container {
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-}
-.texte {
-	width: 50%;
-	background: var(--bkgrn1);
-}
-.image {
-	width: 50%;
-	background: var(--bkgrn3);
-}
-h2{
-    color : var(--title); 
-    font-size : 70px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : bolder;
-    font-style : normal;
-    text-decoration : none;
     font-variant : normal;
-    margin: 20px;
+	
 }
-.texte:nth-of-type(2n) h2{
+.texte:nth-of-type(2n){
 	text-align: left;
-	margin-left: 50px;
+	padding-left: 50px;
 }
-.texte:nth-of-type(2n-1) h2{
+.texte:nth-of-type(2n) .texte-content{
+	padding-right: 40%;
+}
+.texte:nth-of-type(2n-1){
 	text-align: right;
-	margin-right: 50px;
+	padding-right: 50px;
+}
+.texte:nth-of-type(2n-1) .texte-content{
+	padding-left: 40%;
 }
 
-section#presentation{
-   height: 100vh;
+section#presentation .image{
+	background-image: url("../images/Presentation.jpg");
 }
-section#specialites{
-height: 100vh;
-background-image: url('../images/test.jpg');
-background-color: #cccccc;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+
+section#specialites .image{
+	background-image: url("../images/Specialites.jpg");
 }
-section#orientation{
-   height: 100vh;
+
+section#orientation .image{
+	background-image: url("../images/Orientation.jpg");
 }
-section#interets{
-   height: 100vh;
+
+section#hobbies .image{
+	background-image: url("../images/Hobbies.jpg");
 }
+
+.image {
+	background: var(--bkgrn3);
+	
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .next{
 	background: var(--button);
 	width: 60px;
 	height: 60px;
 	border-radius : 100%;
-	position: absolute;
-	left: 50%;
-	margin-right: -50%;
-	bottom: 30px;
-	transform: translate(-50%, -0%);
+
+	margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
 }
 .next a{
 	color: var(--texte);
@@ -183,17 +233,53 @@ section#interets{
     font-style : normal;
     text-decoration : none;
     font-variant : normal;
-    margin: 15px;
 }
+
+.liste-sites li{
+	margin-top: 10px;
+}
+.liste-sites a{
+	color : var(--texte); 
+    font-size : 20px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : normal;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
+}
+
 footer{
-    text-align:center;
-    margin: 2rem;
-}
-footer a{
-    
-    text-decoration: none;
-    background-color:yellow;
-    color: blue;
-    border-radius: 20px;
+    background-color: var(--barre);
+    height: 25px;
     padding: 5px;
+}
+
+footer p, footer p a{
+	color: var(--texte);
+    font-size : 18px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : lighter;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
+    
+    display: inline;
+    
+    margin-right: 30px;
+}
+.licence{
+	float: right;
+}
+.licence-info{
+	width: 300px;
+	display: inline-block;
+}
+.licence-info, .licence-info a{
+	color: var(--texte);
+    font-size : 10px ;
+    font-family : Ubuntu, Helvetica;
+    font-weight : normal;
+    font-style : normal;
+    text-decoration : none;
+    font-variant : normal;
 }
