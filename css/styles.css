@@ -1,285 +1,275 @@
-/* 
-Page de style pour le premier site en html/css.
-NSI LMD 
-Sur une idée originale de Jean-Manuel Meny et Ludovic Fasquelle
-
-*/
-
 :root {
-  --texte: #f3f3f4;
-  --title: #d9c5b2;
-  --barre: #14110f;
-  --bkgrn1: #7e7f83;
-  --bkgrn2: #5BA199;
-  --bkgrn3: #34312d;
-  --button: #d9c5b2;
+	--texte : #f3f3f4;
+	--title : #d9c5b2;
+	--barre : #14110f;
+	--bkgrn1 : #7e7f83;
+	--bkgrn2 : #5BA199;
+	--bkgrn3 : #34312d;
+	--button : #d9c5b2;
 }
-
-header{
-	display: inline-block;
+header {
+	display : inline-block;
 }
-body{
-    width: 100%; /* occupe 70% de la page en largeur */
-    margin: 0 auto; /* auto permet ici de centrer le body en laissant marge gauche et marge droite identiques */
+body {
+	width : 100%;
+	margin : 0 auto;
 }
-h2{
-    color : var(--title); 
-    font-size : 70px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : bolder;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
-    margin: 20px;
-    margin-top: 100px;
-    
+h2 {
+	color : var(--title);
+	font-size : 70px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : bolder;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
+	margin : 20px;
+	margin-top : 100px;
 }
-p{
-    color : var(--texte); 
-    font-size : 20px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : normal;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal; 
-    
+p {
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-section{
-	height: 100vh;
-	background: var(--bkgrn1);
-	text-align: center;
+section {
+	height : 100vh;
+	background : #7e7f83;
+	text-align : center;
 }
-.barreduhaut{
-background-color: var(--barre);
-height: 50px;
-overflow: hidden;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-/*filter: blur(5px);*/
-position:fixed;
-top:0px;
-left:0px;
-right:0px;
+.barreduhaut {
+	background-color : #14110f;
+	height : 50px;
+	overflow : hidden;
+	box-shadow : 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.3);
+	position : fixed;
+	top : 0;
+	left : 0;
+	right : 0;
 }
-.barreduhautback{
-	height: 50px;
+.barreduhautback {
+	height : 50px;
 }
-.encartnames{
-	margin : 0px;
+.encartnames {
+	margin : 0;
 	margin-left : 10px;
-	
-	color: var(--texte);
-    font-size : 40px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : lighter;
+	color : var(--texte);
+	font-size : 40px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : lighter;
 }
-a.sitename{
-	color: var(--texte);
-    font-size : 30px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : bold;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+a.sitename {
+	color : var(--texte);
+	font-size : 30px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : bold;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-a.pagename{
-	color: var(--texte);
-    font-size : 20px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : normal;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+a.pagename {
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-
-
-nav{
-	padding: 0px;
-	margin: 0px;
-	margin-top: 0px;
-	border: 0px solid yellow;
-	display: inline-block;
-	float: right;
-	position: fixed;
-	right: -25em;
-	transition: 0.2s;
-	
-	color: var(--texte);
-    font-size : 25px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : lighter;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+nav {
+	padding : 0;
+	margin : 0;
+	margin-top : 0;
+	border : yellow solid 0;
+	display : inline-block;
+	float : right;
+	position : fixed;
+	right : -25em;
+	transition : 0.2s;
+	color : var(--texte);
+	font-size : 25px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : lighter;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-nav:hover { right: 0 }
-
-.menu-icone{
-	display: inline;
-	margin-right: 10px;
-	
-	color : var(--texte); 
-    font-size : 30px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : bolder;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal; 
+nav:hover {
+	right : 0;
 }
-nav ul{
-	padding: 0px;
-	margin : 0px;
-	padding-right: 25px;
-	display: inline;
+.menu-icone {
+	display : inline;
+	margin-right : 10px;
+	color : var(--texte);
+	font-size : 30px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : bolder;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-nav li{
+nav ul {
+	padding : 0;
+	margin : 0;
+	padding-right : 25px;
+	display : inline;
+}
+nav li {
 	margin : 10px;
-	padding: 0px;
-	display: inline-block;
+	padding : 0;
+	display : inline-block;
 }
-nav li a{
-	color: var(--texte);
-    font-size : 25px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : lighter;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal; 
+nav li a {
+	color : var(--texte);
+	font-size : 25px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : lighter;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
 .container {
-/*
-	display: flex;
-	flex-direction: row;
-	height: 100%;
-*/	
-	display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100%;
-    
+	display : grid;
+	grid-template-columns : 50% 50%;
+	height : 100%;
 }
-/*
-.texte h2{
-	margin-top: 100px;
-}*/
-.texte-content{
-	height: 40%;
-    margin: 20px;
-    padding-top: 100px;
-    
-    color : var(--texte); 
-    font-size : 20px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : normal;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
-	
+.texte-content {
+	height : 40%;
+	margin : 20px;
+	padding-top : 100px;
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-.texte:nth-of-type(2n){
-	text-align: left;
-	padding-left: 50px;
+.texte:nth-of-type(2n) {
+	text-align : left;
+	padding-left : 50px;
 }
-.texte:nth-of-type(2n) .texte-content{
-	padding-right: 40%;
+.texte:nth-of-type(2n) .texte-content {
+	padding-right : 40%;
 }
-.texte:nth-of-type(2n-1){
-	text-align: right;
-	padding-right: 50px;
+.texte:nth-of-type(2n-1) {
+	text-align : right;
+	padding-right : 50px;
 }
-.texte:nth-of-type(2n-1) .texte-content{
-	padding-left: 40%;
+.texte:nth-of-type(2n-1) .texte-content {
+	padding-left : 40%;
 }
-
-section#presentation .image{
-	background-image: url("../images/Presentation.jpg");
+section#presentation .image {
+	background-image : url("../images/PresentationFREE.jpg");
 }
-
-section#specialites .image{
-	background-image: url("../images/Specialites.jpg");
+section#specialites .image {
+	background-image : url("../images/SpecialitesFREE.jpg");
 }
-
-section#orientation .image{
-	background-image: url("../images/Orientation.jpg");
+section#orientation .image {
+	background-image : url("../images/OrientationFREE.jpg");
 }
-
-section#hobbies .image{
-	background-image: url("../images/Hobbies.jpg");
+section#hobbies .image {
+	background-image : url("../images/HobbiesFREE.jpg");
 }
-
 .image {
-	background: var(--bkgrn3);
-	
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background : #34312d;
+	height : 100%;
+	background-position : center;
+	background-repeat : no-repeat;
+	background-size : cover;
 }
-
-.next{
-	background: var(--button);
-	width: 60px;
-	height: 60px;
+.next {
+	background : #d9c5b2;
+	width : 60px;
+	height : 60px;
 	border-radius : 100%;
-
-	margin-left: auto;
-    margin-right: auto;
-    
-    text-align: center;
+	margin-left : auto;
+	margin-right : auto;
+	text-align : center;
 }
-.next a{
-	color: var(--texte);
-    font-size : 40px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : bolder;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+.next a {
+	color : var(--texte);
+	font-size : 40px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : bolder;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-
-.liste-sites li{
-	margin-top: 10px;
+.liste-sites li {
+	margin-top : 10px;
 }
-.liste-sites a{
-	color : var(--texte); 
-    font-size : 20px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : normal;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+.liste-sites a {
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
-
-footer{
-    background-color: var(--barre);
-    height: 25px;
-    padding: 5px;
+table#frise-chrono-table {
+	width : 60%;
+	margin-left : auto;
+	margin-right : auto;
 }
-
-footer p, footer p a{
-	color: var(--texte);
-    font-size : 18px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : lighter;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
-    
-    display: inline;
-    
-    margin-right: 30px;
+table#frise-chrono-table td {
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
+	padding : 10px;
+	text-align : left;
 }
-.licence{
-	float: right;
+table#frise-chrono-table th a {
+	color : var(--texte);
+	font-size : 20px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : bolder;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
+	width : 70px;
+	text-align : left;
 }
-.licence-info{
-	width: 300px;
-	display: inline-block;
+.hist-part .texte-content {
+	width : 60%;
+	margin : auto;
 }
-.licence-info, .licence-info a{
-	color: var(--texte);
-    font-size : 10px ;
-    font-family : Ubuntu, Helvetica;
-    font-weight : normal;
-    font-style : normal;
-    text-decoration : none;
-    font-variant : normal;
+footer {
+	background-color : #14110f;
+	height : 25px;
+	padding : 5px;
+}
+footer p, footer p a {
+	color : var(--texte);
+	font-size : 18px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : lighter;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
+	display : inline;
+	margin-right : 30px;
+}
+.licence {
+	float : right;
+}
+.licence-info {
+	width : 300px;
+	display : inline-block;
+}
+.licence-info, .licence-info a {
+	color : var(--texte);
+	font-size : 10px;
+	font-family : Ubuntu, Helvetica;
+	font-weight : normal;
+	font-style : normal;
+	text-decoration : none;
+	font-variant : normal;
 }
